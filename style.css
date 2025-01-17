@@ -10,7 +10,6 @@
     overflow-x: hidden;
     -moz-user-select: none;
     -webkit-user-select: none;
-    -webkit-user-drag: none;
     user-select: none;
 }
 body::-webkit-scrollbar {
@@ -23,6 +22,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: rgba(169, 169, 169, 0);
     outline: 1px solid slategrey;
+}
+body{
+    background-color: var(--theme-dark);
 }
 .homesection{
     background-image: url("./assets/1000044647.jpg");
@@ -42,6 +44,18 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+}
+.navigation2{
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0 ;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: var(--theme-dark);
 }
 .logo{
     width: 200px;
@@ -122,4 +136,18 @@ body::-webkit-scrollbar-thumb {
 }
 .noul{
     text-decoration: none;
+}
+.abtsec{
+    background-color: var(--theme-dark);
+    padding-left: 25px;
+    padding-top: 25px;
+    color: white;
+}
+.abtsec>h1{
+    font-size: 60px;
+    margin-top: 2rem;
+}
+.abtsec>p{
+    width: 50%;
+    font-size: 20px;
 }
