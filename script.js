@@ -55,7 +55,7 @@ function closenav(){
     let navbox = document.querySelector(".navbg");
     // let navbx = document.querySelector(".navbox");
     let navbtn = document.querySelector(".navbutton");
-    navbox.style.left="200vw";
+    navbox.style.left="100vw";
     // navbx.style.right="-75vw";
     navbtn.innerHTML="&#8801;"
 }
