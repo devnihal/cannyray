@@ -26,6 +26,7 @@ body::-webkit-scrollbar-thumb {
 }
 body{
     background-color: var(--theme-dark);
+    overflow-x: hidden;
 }
 .homesection{
     background-image: url("./assets/1000044647.jpg");
@@ -91,6 +92,7 @@ body{
     opacity: 0.25;
 }
 .section{
+    /* height: fit-content; */
     height: 100dvh;
     width: 100vw;
     position: relative;
