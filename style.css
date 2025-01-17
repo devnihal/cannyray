@@ -11,6 +11,7 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
     width: 5px;
@@ -92,6 +93,7 @@ body{
 .section{
     height: 100dvh;
     width: 100vw;
+    position: relative;
 }
 .homebody{
     position: relative;
@@ -144,10 +146,20 @@ body{
     color: white;
 }
 .abtsec>h1{
-    font-size: 60px;
-    margin-top: 2rem;
+    font-size: 50px;
+    margin-top: 4rem;
 }
 .abtsec>p{
     width: 50%;
     font-size: 20px;
+}
+.abtimg{
+    height: 100dvh;
+    width: 50%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    clip-path: polygon(0% 0%,100% 0%, 100% 100%,25% 100%);
 }
