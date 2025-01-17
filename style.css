@@ -215,3 +215,47 @@ body{
     -webkit-backdrop-filter: blur(15px);
     text-align: center;
 }
+footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer>.ftsec>hr{
+    all: unset;
+    color: var(--theme-color);
+    width: 100px;
+    background-color: var(--theme-color);
+    height: 1px;
+    border-top: 2px solid var(--theme-color);
+    display: block;
+}
+footer>.ftsec>h3{
+    font-size: 30px;
+}
+.footerlinks{
+    list-style-type: "\25b6";
+    color: var(--theme-color);
+    margin-left: 20px;
+}
+.footerlinks2{
+    list-style-type: none;
+    color: var(--theme-color);
+    margin-left: 20px;
+}
+.footerlinks li{
+    margin-left: 10px;
+}
+.ftsec{
+    width: 40%;
+}
+.wt{
+    color: white;
+}
+.copy{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
