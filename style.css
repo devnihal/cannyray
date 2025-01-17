@@ -195,6 +195,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 .servcont{
     width: 300px;
@@ -213,8 +214,8 @@ body{
     left: 0;
     width: 100%;
     padding: 15px;
-    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     text-align: center;
 }
 footer{
@@ -262,3 +263,97 @@ footer>.ftsec>h3{
     text-align: center;
     background-color: black;
 }
+.navbutton{
+    display: none;
+}
+.loadscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100vw;
+    z-index: 50;
+    background-color: var(--theme-dark);
+    transition: 1s ease-in;
+}
+.loadimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 75px;
+    transform: translate(-50%,-50%);
+}
+
+.snippet{
+    position: absolute;
+    top:  calc(50% + 50px);
+    left:50%;
+}
+.dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--theme-color);
+    color: var(--theme-color);
+    box-shadow: 9999px 0 0 -5px;
+    animation: dot-pulse 1.5s infinite linear;
+    animation-delay: 0.25s;
+  }
+  .dot-pulse::before, .dot-pulse::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--theme-color);
+    color: var(--theme-color);
+  }
+  .dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px;
+    animation: dot-pulse-before 1.5s infinite linear;
+    animation-delay: 0s;
+  }
+  .dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px;
+    animation: dot-pulse-after 1.5s infinite linear;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes dot-pulse-before {
+    0% {
+      box-shadow: 9984px 0 0 -5px;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px;
+    }
+    60%, 100% {
+      box-shadow: 9984px 0 0 -5px;
+    }
+  }
+  @keyframes dot-pulse {
+    0% {
+      box-shadow: 9999px 0 0 -5px;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px;
+    }
+    60%, 100% {
+      box-shadow: 9999px 0 0 -5px;
+    }
+  }
+  @keyframes dot-pulse-after {
+    0% {
+      box-shadow: 10014px 0 0 -5px;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px;
+    }
+    60%, 100% {
+      box-shadow: 10014px 0 0 -5px;
+    }
+  }
+  
