@@ -60,6 +60,7 @@ function closenav(){
     navbtn.innerHTML="&#8801;"
 }
 window.onload=()=>{
+    window.scrollTo(0,0);
     let navbox = document.querySelector(".navbg");
     if(window.innerWidth<720){
         navbox.addEventListener("click",closenav);
