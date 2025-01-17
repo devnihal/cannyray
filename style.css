@@ -224,6 +224,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-evenly;
 }
 footer>.ftsec>hr{
     all: unset;
@@ -238,9 +239,9 @@ footer>.ftsec>h3{
     font-size: 30px;
 }
 .footerlinks{
-    list-style-type: "\25b6";
+    list-style-type: "\25b6    ";
     color: var(--theme-color);
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .footerlinks2{
     list-style-type: none;
@@ -251,7 +252,7 @@ footer>.ftsec>h3{
     margin-left: 10px;
 }
 .ftsec{
-    width: 40%;
+    width: 30%;
 }
 .wt{
     color: white;
